@@ -48,13 +48,14 @@ if module == "schedule":
     privilege_level = GetParams("privilege")
     desc = GetParams("desc")
     name = GetParams("task_name")
-    file_path = GetParams("path")
+    path = GetParams("path")
+    var = GetParams("var")
 
     try:
         time = int(time)
         privilege_level = int(privilege_level)
 
-        with open(file_path, 'w') as f:
+        with open(path, 'w') as f:
             f.write(script)
 
         scheduler = win32com.client.Dispatch('Schedule.Service')
@@ -73,7 +74,7 @@ if module == "schedule":
         TASK_ACTION_EXEC = 0
         action = task_def.Actions.Create(TASK_ACTION_EXEC)
         action.ID = id
-        action.Path = file_path
+        action.Path = path
         action.Arguments = arg
 
         # Set parameters
@@ -98,8 +99,10 @@ if module == "schedule":
             '',  # No password
             TASK_LOGON_NONE)
         
+        SetVar(var, True)
     except Exception as e:
         import traceback
         traceback.print_exc()
+        SetVar(var, False)
         PrintException()
         raise e

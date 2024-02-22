@@ -174,7 +174,7 @@
                             "en": "Path where the .bat to be executed will be saved",
                             "pr": "Caminho onde será salvo o .bat a ser executado"
                         },
-                        "id": "file_path",
+                        "id": "path",
                         "css": "col-md-10"
                     },
                     {
@@ -195,13 +195,39 @@
                             "pr": "Índice do Nível de Privilégio para executar a tarefa."
                         },
                         "help": {
-                            "es": "Por default está en 0 que es la opción de ejecutar solo cuando se haya iniciado sesión.",
-                            "en": "By default it is at 0 which is the option to execute only when logged in.",
-                            "pr": "Por padrão é 0, que é a opção para executar somente quando estiver logado."
+                            "es": "Por default está en 0, opción de ejecutar solo cuando se haya iniciado sesión.",
+                            "en": "By default it is at 0, option to execute only when logged in.",
+                            "pr": "Por padrão é 0, opção para executar somente quando estiver logado."
                         },
                         "id": "privilege",
                         "css": "col-md-4"
-                    }
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                          "es": "variable",
+                          "en": "variable",
+                          "pr": "variável"
+                        },
+                        "title": {
+                          "es": "Guardar resultado de conexión",
+                          "en": "Save connection result",
+                          "pr": "Salvar resultado da conexão"
+                        },
+                        "description": {
+                          "es": "Variable donde se guardará el resultado de la conexión",
+                          "en": "Variable where the connection result will be saved",
+                          "pr": "Variável onde o resultado da conexão será salvo"
+                        },
+                        "help": {
+                            "es": "Nombre de la variable sin {}",
+                            "en": "Variable name without {}",
+                            "pr": "Nome da variável sem {}"
+                        },
+                        "remove_vars": "True",
+                        "id": "var",
+                        "css": "col-md-6"
+                      }
                 ]
             },
             "video_youtube": "aMV6cXPMMSo",
