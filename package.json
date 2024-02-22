@@ -110,9 +110,9 @@
                             "pr": "Minutos:"
                         },
                         "description": {
-                            "es": "Tiempo para programar la tarea, debe ser un entero",
-                            "en": "Time to schedule the task, must be an integer",
-                            "pr": "O horário para agendar a tarefa deve ser um número inteiro"
+                            "es": "Tiempo para programar la ejecución tarea, debe ser un entero",
+                            "en": "Time to schedule task execution, must be an integer",
+                            "pr": "O horário para agendar a execução da tarefa deve ser um número inteiro"
                         },
                         "id": "time",
                         "css": "col-md-6"
