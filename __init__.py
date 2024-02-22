@@ -79,7 +79,6 @@ if module == "schedule":
         # Set parameters
         if not privilege_level:
             privilege_level = 0
-
         TASK_LOGON_SERVICE_ACCOUNT = 5
         task_def.RegistrationInfo.Description = desc
         task_def.Settings.Enabled = True

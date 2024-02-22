@@ -5,7 +5,8 @@
 # Schedule
   
 With this module you can create a task and schedule its execution  
-
+  
+![banner](imgs/ModuloShedule.jpg)
 
 ## How to install this module
   
@@ -14,26 +15,18 @@ To install the module in Rocketbot Studio, it can be done in two ways:
 2. Automatic: When entering Rocketbot Studio on the right margin you will find the **Addons** section, select **Install Mods**, search for the desired module and press install.  
 
 
-## Overview
+## Description of the commands
 
-
-1. Schedule a task  
-Create a .bat task and schedule its execution  
-
-
-
-
-----
-### OS
-
-- windows
-- mac
-- linux
-- docker
-
-### Dependencies
-
-### License
+### Schedule a task
   
-![MIT](https://camo.githubusercontent.com/107590fac8cbd65071396bb4d04040f76cde5bde/687474703a2f2f696d672e736869656c64732e696f2f3a6c6963656e73652d6d69742d626c75652e7376673f7374796c653d666c61742d737175617265)  
-[MIT](http://opensource.org/licenses/mit-license.ph)
+Create a .bat task and schedule its execution
+|Parameters|Description|example|
+| --- | --- | --- |
+|Task Name||Rocketbot kill app|
+|Script for the .bat||taskkill /f /im rocketbot.exe|
+|Arguments|Arguments for creating the task|/c 'exit'|
+|Minutes|Time to schedule the task, must be an integer|10|
+|Action ID|ID to identify the task|Rocketbot killer|
+|Description|Task description|Rocketbot killer batch file|
+|The .bat path|Path where the .bat to be executed will be saved|/User/Doc/task.bat|
+|Privilege Level|Index of the Privilege Level to execute the task.|0|
