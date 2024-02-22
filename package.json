@@ -60,7 +60,7 @@
                             "pr": "Nome do tarefa:"
                         },
                         "id": "task_name",
-                        "css": "col-md-10"
+                        "css": "col-md-6"
                     },
                     {
                         "type": "input",
@@ -155,7 +155,7 @@
                             "pr": "Descrição da tarefa"
                         },
                         "id": "desc",
-                        "css": "col-md-10"
+                        "css": "col-md-6"
                     },
                     {
                         "type": "file_select",
@@ -175,7 +175,7 @@
                             "pr": "Caminho onde será salvo o .bat a ser executado"
                         },
                         "id": "path",
-                        "css": "col-md-10"
+                        "css": "col-md-6"
                     },
                     {
                         "type": "input",
@@ -200,31 +200,31 @@
                             "pr": "Por padrão é 0, opção para executar somente quando estiver logado."
                         },
                         "id": "privilege",
-                        "css": "col-md-4"
+                        "css": "col-md-6"
                     },
                     {
                         "type": "input",
                         "placeholder": {
-                          "es": "variable",
-                          "en": "variable",
-                          "pr": "variável"
+                          "es": "var",
+                          "en": "var",
+                          "pr": "var"
                         },
                         "title": {
-                          "es": "Guardar resultado de conexión",
-                          "en": "Save connection result",
-                          "pr": "Salvar resultado da conexão"
+                          "es": "Asignar a variable:",
+                          "en": "Assign to variable:",
+                          "pr": "Atribuir à variável:"
                         },
                         "description": {
-                          "es": "Variable donde se guardará el resultado de la conexión",
-                          "en": "Variable where the connection result will be saved",
-                          "pr": "Variável onde o resultado da conexão será salvo"
+                          "es": "Variable donde se guardará el resultado del comando",
+                          "en": "Variable where the result of the command will be saved",
+                          "pr": "Variável onde será salvo o resultado do comando"
                         },
                         "help": {
                             "es": "Nombre de la variable sin {}",
                             "en": "Variable name without {}",
                             "pr": "Nome da variável sem {}"
                         },
-                        "remove_vars": "True",
+                        "remove_vars": true,
                         "id": "var",
                         "css": "col-md-6"
                       }
