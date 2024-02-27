@@ -5,7 +5,6 @@
 # Schedule
   
 Con este módulo podrá crear una tarea y programar su ejecución  
-
   
 ![banner](imgs/ModuloShedule.jpg)
 
@@ -26,8 +25,8 @@ Crea una tarea .bat y programa su ejecución
 |Nombre de la Tarea||Rocketbot kill app|
 |Script para del .bat||taskkill /f /im rocketbot.exe|
 |Argumentos|Argumentos para la creación de la tarea|/c 'exit'|
-|Minutos|Tiempo para programar la tarea, debe ser un entero|10|
+|Minutos|Tiempo para programar la ejecución tarea, debe ser un entero|10|
 |Accion ID|ID para identificar de la tarea|Rocketbot killer|
 |Descripción|Descripción de la tarea|Rocketbot killer batch file|
-|Ruta del .bat|Ruta donde se guardará el .bat a ejecutar|/User/Doc/task.bat|
 |Nivel de Privilegio|Index del Nivel de Privilegio para ejecutar la tarea.|0|
+|Asignar a variable|Variable donde se guardará el resultado del comando|var|

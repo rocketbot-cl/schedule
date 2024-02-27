@@ -5,9 +5,8 @@
 # Schedule
   
 With this module you can create a task and schedule its execution  
-  
-![banner](imgs/ModuloShedule.jpg)
 
+![banner](imgs/ModuloShedule.jpg)
 ## How to install this module
   
 To install the module in Rocketbot Studio, it can be done in two ways:
@@ -25,8 +24,8 @@ Create a .bat task and schedule its execution
 |Task Name||Rocketbot kill app|
 |Script for the .bat||taskkill /f /im rocketbot.exe|
 |Arguments|Arguments for creating the task|/c 'exit'|
-|Minutes|Time to schedule the task, must be an integer|10|
+|Minutes|Time to schedule task execution, must be an integer|10|
 |Action ID|ID to identify the task|Rocketbot killer|
 |Description|Task description|Rocketbot killer batch file|
-|The .bat path|Path where the .bat to be executed will be saved|/User/Doc/task.bat|
 |Privilege Level|Index of the Privilege Level to execute the task.|0|
+|Assign to variable|Variable where the result of the command will be saved|var|

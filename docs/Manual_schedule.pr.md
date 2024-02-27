@@ -24,8 +24,8 @@ Crie uma tarefa .bat e agende sua execução
 |Nome do tarefa||Rocketbot kill app|
 |Script para o .bat||taskkill /f /im rocketbot.exe|
 |Argumentos|Argumentos para criar a tarefa|/c 'exit'|
-|Minutos|O horário para agendar a tarefa deve ser um número inteiro|10|
+|Minutos|O horário para agendar a execução da tarefa deve ser um número inteiro|10|
 |Ação ID|ID para identificar a tarefa|Rocketbot killer|
 |Descrição|Descrição da tarefa|Rocketbot killer batch file|
-|Caminho .bat|Caminho onde será salvo o .bat a ser executado|/User/Doc/task.bat|
 |Nível de privilégio|Índice do Nível de Privilégio para executar a tarefa.|0|
+|Atribuir à variável|Variável onde será salvo o resultado do comando|var|
