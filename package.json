@@ -63,7 +63,7 @@
                         "css": "col-md-6"
                     },
                     {
-                        "type": "input",
+                        "type": "textarea",
                         "placeholder": {
                             "es": "taskkill /f /im rocketbot.exe",
                             "en": "taskkill /f /im rocketbot.exe",
@@ -155,26 +155,6 @@
                             "pr": "Descrição da tarefa"
                         },
                         "id": "desc",
-                        "css": "col-md-6"
-                    },
-                    {
-                        "type": "file_select",
-                        "placeholder": {
-                            "es": "/User/Doc/task.bat",
-                            "en": "/User/Doc/task.bat",
-                            "pr": "/User/Doc/task.bat"
-                        },
-                        "title": {
-                            "es": "Ruta del .bat:",
-                            "en": "The .bat path:",
-                            "pr": "Caminho .bat:"
-                        },
-                        "description": {
-                            "es": "Ruta donde se guardará el .bat a ejecutar",
-                            "en": "Path where the .bat to be executed will be saved",
-                            "pr": "Caminho onde será salvo o .bat a ser executado"
-                        },
-                        "id": "path",
                         "css": "col-md-6"
                     },
                     {

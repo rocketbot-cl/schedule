@@ -28,11 +28,10 @@ import sys
 import datetime
 import win32com.client
 
+
 base_path = tmp_global_obj["basepath"]
 cur_path = base_path + 'modules' + os.sep + 'schedule' + os.sep + 'libs' + os.sep
 sys.path.append(cur_path)
-
-# file_path = os.path.join(base_path, "rocketbot_kill.bat")
 
 """
     Obtengo el modulo que fue invocado
@@ -48,14 +47,14 @@ if module == "schedule":
     privilege_level = GetParams("privilege")
     desc = GetParams("desc")
     name = GetParams("task_name")
-    path = GetParams("path")
     var = GetParams("var")
 
     try:
+        file_path = os.path.join(base_path, name + ".bat")
         time = int(time)
         privilege_level = int(privilege_level)
 
-        with open(path, 'w') as f:
+        with open(file_path, 'w') as f:
             f.write(script)
 
         scheduler = win32com.client.Dispatch('Schedule.Service')
@@ -74,8 +73,9 @@ if module == "schedule":
         TASK_ACTION_EXEC = 0
         action = task_def.Actions.Create(TASK_ACTION_EXEC)
         action.ID = id
-        action.Path = path
-        action.Arguments = arg
+        action.Path = file_path
+        if arg:
+            action.Arguments = arg
 
         # Set parameters
         if not privilege_level:
@@ -100,6 +100,7 @@ if module == "schedule":
             TASK_LOGON_NONE)
         
         SetVar(var, True)
+        
     except Exception as e:
         import traceback
         traceback.print_exc()
